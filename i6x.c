@@ -1,4 +1,4 @@
-#include "dev_i6x.h"
+#include "i6x.h"
 
 #include <string.h>
 
