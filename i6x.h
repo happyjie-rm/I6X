@@ -7,6 +7,7 @@
 #include "FreeRTOS.h"
 #include "bsp_uart.h"
 #include "comp_cmd.h"
+#include "comp_def.h"
 #include "task.h"
 
 // ==================== I6x / iBus 协议常量 ====================
@@ -22,7 +23,6 @@
 #define I6X_CH_VALUE_MIN (1000u)          //! iBus 常见通道最小值。
 #define I6X_CH_VALUE_MID (1500u)          //! iBus 常见通道中值。
 #define I6X_CH_VALUE_MAX (2000u)          //! iBus 常见通道最大值。
-#define SIGNAL_I6X_RAW_READY (1u << 5)    //! ISR 收到完整帧后通知任务解析的信号位。
 
 #ifdef __cplusplus
 extern "C" {
